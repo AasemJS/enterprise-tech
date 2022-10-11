@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AasemJS/enterprise-tech/issues"
   },
-  "homepage": "https://github.com/AasemJS/enterprise-tech#readme"
+  "homepage": "https://github.com/AasemJS/enterprise-tech#readme",
+  "dependencies": {
+    "mongoose": "^6.6.5"
+  }
 }
