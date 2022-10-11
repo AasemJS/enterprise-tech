@@ -12,6 +12,7 @@
   },
   "author": "AsemJS",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AasemJS/enterprise-tech/issues"
   },
