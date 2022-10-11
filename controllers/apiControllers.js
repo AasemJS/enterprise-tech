@@ -1,5 +1,5 @@
 import { application } from 'express';
-import Image, { find, deleteMany } from '../models/apiModels';
+import Image from '../models/apiModels.js';
 
 
 // List all items
@@ -102,11 +102,11 @@ const destroy = (req, res, next) =>{
     let logDeleteResponse = res.send;
     res.send = function (data) {
     
-    //logs to capture response payload
-    console.log("\nResponse Body\n")
-    console.log(data)
-    logDeleteResponse.apply(res, arguments);
-}
+        //logs to capture response payload
+        console.log("\nResponse Body\n")
+        console.log(data)
+        logDeleteResponse.apply(res, arguments);
+    }
     let imageId = req.body.imageId
     deleteMany()
     .then(() => {
@@ -121,6 +121,6 @@ const destroy = (req, res, next) =>{
     })
 }
 
-export default {
+export {
     index, store, destroy
 }

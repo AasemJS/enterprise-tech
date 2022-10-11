@@ -1,10 +1,13 @@
 import express from 'express'
-import { connect, connection } from 'mongoose'
+import pkg from 'mongoose';
+const { connect, connection } = pkg;
 import morgan from 'morgan'
-import { urlencoded, json } from 'body-parser'
+// import { urlencoded, json } from 'body-parser'
+import pkg2 from 'body-parser';
+const { urlencoded, json } = pkg2;
 import http from 'http'
 
-import ImageRoutes from './routes/apiRoutes'
+import ImageRoutes from './routes/apiRoutes.js'
 
 // MongoDB connection
 
@@ -31,7 +34,7 @@ const ip = '127.0.0.1' || 'localhost'
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, ()=>{
-    console.log("\n************Server Details*****************\n");
+    console.log("\nServer Details\n");
     console.log(`Server is listening: http://${ip}:${PORT}`)
 })
 
