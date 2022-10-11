@@ -1,0 +1,19 @@
+{
+  "name": "assignment-1-api",
+  "version": "1.0.0",
+  "description": "API Calls",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AasemJS/enterprise-tech.git"
+  },
+  "author": "AsemJS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AasemJS/enterprise-tech/issues"
+  },
+  "homepage": "https://github.com/AasemJS/enterprise-tech#readme"
+}
